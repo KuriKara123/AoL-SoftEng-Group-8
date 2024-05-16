@@ -15,7 +15,6 @@ const io = socketIo(server);
 
 app.use(express.json());
 
-// Create a MySQL database connection
 const db = mysql.createConnection({
     host: 'localhost',
     user: 'root',
