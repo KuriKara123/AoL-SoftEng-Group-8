@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QuickPop - A new and simple calling tenant platform</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+          rel="stylesheet" 
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+          crossorigin="anonymous">
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
+          integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
+          crossorigin="anonymous" referrerpolicy="no-referrer" />      
+    <link rel="stylesheet" href="../about-page/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+          <a class="navbar-brand me-auto" href="#">QuickPop</a>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">QuickPop</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../home-page/home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-lg-2" href="../list-page/list.html">My List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="../chat-page/chat.html">Chat</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2" href="../profile-page/profile.html">Profile</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link mx-lg-2 active" aria-current="page" href="#">About Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div id="greeting">
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    // Retrieve user data from localStorage
+                    const userData = JSON.parse(localStorage.getItem('userData'));
+        
+                    // Check if user data exists
+                    if (userData && userData.name) {
+                        const username = userData.name;
+                        const greetingElement = document.getElementById('greeting');
+                        greetingElement.textContent = `Feel free to know us, ${username}.`;
+                    } else {
+                        // If user data is not found, redirect to the login page
+                        window.location.href = "login.html";
+                    }
+                });
+            </script>
+        </div>
+        </div>
+      </nav>
+
+    <section class="abouthead">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>QuickPop is a cutting-edge platform designed to streamline the process of connecting restaurants and drinks stores with event organizers in Indonesia. By facilitating communication between these establishments and event hosts, QuickPop aims to simplify the logistics of catering and beverage services for various events, ranging from corporate gatherings to social occasions.</p>
+            <p>With QuickPop, event organizers gain access to a diverse selection of culinary and beverage options, ensuring that their events are tailored to the unique tastes and preferences of their attendees. Meanwhile, restaurants and drinks stores have the opportunity to showcase their offerings to a wider audience, enhancing their visibility and expanding their customer base.</p>
+            <p>By fostering collaborations between event hosts and local businesses, QuickPop not only enhances the efficiency of event planning but also contributes to the growth of small businesses in Indonesia. Through its user-friendly interface and comprehensive service offerings, QuickPop revolutionizes the way events are catered, providing a seamless experience for both organizers and vendors alike.</p>
+        </div>
+    </section>
+
+    <section id="aboutbody" class="section-p1">
+        <img src="../asset/hero2.jpg" alt="">
+        <div>
+            <h2>Who we Are?</h2>
+            <p>QuickPop, a platform site that provides pop up store call services for renters. We have several goals in developing this website:</p>
+            <p>- Makes it easier for users to find websites that provide pop up store call services for tenants.</p>
+            <p>- Helping to improve the economy of MSME businesses in Indonesia through the Pop up store trend.</p>
+            <p>- Ensure transaction security from the tenant transaction process with restaurant or catering owners.</p>
+            <p>- Expanding the variety of Pop up Stores in Indonesia which so far has been less varied.</p>
+            <p>- Providing space for new MSME businesses in Indonesia to develop in fair business competition.</p>
+            <p>- Providing a memorable experience for our users, because this is still considered new in Indonesia.</p>
+            <p>We hope that the existence of this pop up store calling website called "QuickPop" can help the development of the Indonesian economy.</p>
+            <marquee bgcolor="#ffa500" loop="-1" scrollamount="5" width="100%">We glad you want to know more about us and support our business.</marquee>
+        </div>
+    </section>
+
+    <section class="vission">
+        <div class="container">
+            <h2>QuickPop's Vission</h2>
+            <p>Revolutionize the event industry in Indonesia by creating a seamless platform that connects event organizers with local restaurants and drinks stores. We aim to streamline the process of catering and beverage services for events of all sizes, ensuring that hosts have access to a diverse range of culinary options while empowering small businesses to thrive in the vibrant Indonesian market.</p>
+        </div>
+    </section>
+
+    <section class="mission">
+        <div class="container">
+            <h2>QuickPop's Mission</h2>
+            <p>Facilitate collaborations that drive efficiency, innovation, and growth, ultimately enhancing the experience for both event organizers and vendors, and contributing to the enrichment of communities across Indonesia. we are deeply invested in giving back to the communities we serve. Through partnerships with local charities and organizations, we strive to make a positive impact on society by supporting initiatives related to hunger relief, education, and community development.</p>
+        </div>
+    </section>
+
+    <section id="visit-details" class="section-p1">
+      <div class="details">
+        <span>Get in Touch</span>
+        <h2>Visit our agency location if you need more help.</h2>
+        <h3>Head Office</h3>
+        <div>
+          <li>
+            <P>Address: Jalan Tubagus Angke, Jakarta Utara, 11120</P>
+          </li>
+          <li>
+            <P>Contact: +62 811 2222 4509</P>
+          </li>
+          <li>
+            <P>Email: QuickpopIndonesia@gmail.com</P>
+          </li>
+          <li>
+            <P>Operation: 08:00 - 22:00 , Mon - Sat</P>
+          </li>
+        </div>
+      </div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63463.49603881283!2d106.74723577910156!3d-6.201758500000002!2m3!1
+        f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6dcc7d2c4ad%3A0x209cb1eef39be168!2sUniversitas%20Bina%20Nusantara%20Kampus%20Anggrek
+        !5e0!3m2!1sid!2sid!4v1714537875546!5m2!1sid!2sid" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+
+    <section id="form-details">
+        <form action="">
+          <span>Leave a message</span>
+          <h2>We love to hear your message</h2>
+          <input type="text" placeholder="Your Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Subject">
+          <textarea name="" id="" cols="30" rows="10" placeholder="Your message"></textarea>
+          <button class="signup-button">Submit</button>
+        </form>
+        <div class="people">
+          <div>
+            <img src="../asset/member1.jpg" alt="">
+            <p><span>Juwan Jatmiko</span>Senior Tech Lead Manager <br> Phone:
+            +62 893 123 321 <br>Email: juwan.jatmiko@binus.ac.id</p>
+          </div>
+          <div>
+            <img src="../asset/member2.jpg" alt="">
+            <p><span>Ferdinand Darmawan</span>Project Manager <br> Phone:
+            +62 233 143 311 <br>Email: ferdinand.darmawan@binus.ac.id</p>
+          </div>
+          <div>
+            <img src="../asset/member3.jpg" alt="">
+            <p><span>Guiliano Rafael</span>Head Marketing <br> Phone:
+            +62 565 564 234 <br>Email: guiliano.rafael@binus.ac.id</p>
+          </div>
+          <div>
+            <img src="../asset/member4.jpg" alt="">
+            <p><span>Owen Nathaniel</span>Staff Manager <br> Phone:
+            +62 653 123 121 <br>Email: owen.slamet@binus.ac.id</p>
+          </div>
+          <div>
+            <img src="../asset/member5.jpg" alt="">
+            <p><span>Nicholas Deo Bena</span>Assistant <br> Phone:
+            +62 893 123 321 <br>Email: nicholas.deo@binus.ac.id</p>
+          </div>
+        </div>
+    </section>
+
+    <section id="feature" class="feature-section">
+        <div class="fe-box">
+          <img src="../asset/f1.png" alt="">
+          <h6>Instant Process</h6>
+        </div>
+        <div class="fe-box">
+          <img src="../asset/f2.png" alt="">
+          <h6>Saving Time</h6>
+        </div>
+        <div class="fe-box">
+          <img src="../asset/f3.png" alt="">
+          <h6>Grow Business</h6>
+        </div>
+        <div class="fe-box">
+          <img src="../asset/f4.png" alt="">
+          <h6>Customer Happy</h6>
+        </div>
+        <div class="fe-box">
+          <img src="../asset/f5.png" alt="">
+          <h6>Improve relation</h6>
+        </div>
+        <div class="fe-box">
+          <img src="../asset/f6.png" alt="">
+          <h6>All time Service</h6>
+        </div>
+      </section>
+
+
+    <footer class="section-p1">
+        <div class="col">
+          <a class="brand" href="#">QuickPop</a>
+          <h4>Contact</h4>
+          <p><strong>Address: </strong> Jalan Tubagus Angke, Jakarta Utara, 11120</p>
+          <p><strong>Phone: </strong> +62 811 2222 4509</p>
+          <p><strong>Hours: </strong> 08:00 - 22:00 , Mon - Sat</p>
+          <div class="follow">
+            <h4>Follow us</h4>
+            <div>
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-twitter"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-pinterest-p"></i>
+              <i class="fab fa-youtube"></i>
+              <p>@2024, Bina Nusantara University. QuickPop Indonesia</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col">
+          <h4>About</h4>
+          <a href="#">About Us</a>
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Vision & Mission</a>
+        </div>
+        <div class="col">
+          <h4>My Account</h4>
+          <a href="../sign up page/signup.html">Create Account</a>
+          <a href="../login page/login.html">Sign in</a>
+          <a href="#">History</a>
+          <a href="#">Reviews</a>
+          <a href="#">Help</a>
+        </div>
+        <div class="install">
+          <h4>Install App</h4>
+          <p>From App Store or Google Play</p>
+          <div class="row">
+            <img src="../asset/appstore.png" alt="">
+            <img src="../asset/googlepay.png" alt="">
+          </div >
+          <div class="pay">
+          <p>Secured Payment Gateways</p>
+          <img src="../asset/paya.png" alt="">
+        </div>
+        </div>
+      </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+    crossorigin="anonymous"></script>
+</body>
+</html>

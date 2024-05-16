@@ -1,0 +1,553 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+    background-color: black;
+}
+
+.navbar{
+    background-color: white;
+    height: 80px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 1rem;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: orange;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.3s color;
+}
+
+.login-button{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: rgb(187, 121, 0);
+}
+
+.signup-button{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 6px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 10px;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 18px;
+    color: aliceblue;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid azure;
+    outline: none;
+    transition: 0.2s;
+}
+
+.signup-button:hover{
+    background-color: rgb(187, 121, 0);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25 rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: black;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: orange;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+
+    #form-details{
+        padding: 40px;
+    }
+
+    #form-details .form{
+        width: 50%;
+    }
+
+
+@media (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+
+    #visit-details{
+        flex-direction: column;
+    }
+
+    #sm-banner .banner-box{
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2{
+        margin-top: 20px;
+    }
+
+    #banner3{
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+    }
+}   
+
+}
+
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#feature .fe-box{
+    width: 180px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: rgba(0,0,0,0.03);
+    border: 1px solid white;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    border-radius: 3px;
+    line-height: 1;
+    color: white
+}
+
+#feature .fe-box img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.feature-section{
+    padding: 40px 80px;
+}
+
+#product1{
+    padding-top: 130px;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 20%;
+    min-width: 300px;
+
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+#product1 .pro img{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+#product1 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: orange;
+}
+
+#product1 h3{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(135, 91, 7);
+    padding-bottom: 25px;
+}
+
+#product1 .pro .desc{
+    text-align: start;
+    pad: 10px 0;
+}
+
+#product1 .desc span{
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+
+}
+
+#product1 .desc h5{
+    padding-top: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#product1 .desc h4{
+    padding-top: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+#product1 .pro .desc .star{
+    font-size: 12px;
+    color: rgb(255, 234, 0);
+}
+
+#product1 .pro .signup-button{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.text-container button{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.text-container button:hover{
+    background-color: rgb(187, 121, 0);
+}
+
+
+.section-p1{
+    padding: 40px 100px;
+}
+
+.abouthead {
+    padding: 40px 100px;
+    color: white;
+}
+
+.abouthead h2 {
+    padding-top: 100px;
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.abouthead p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.vission {
+    padding: 40px 100px;
+    color: white;
+}
+
+
+.vission h2 {
+    padding-top: 20px;
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.vission p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.mission {
+    padding: 40px 100px;
+    color: white;
+}
+
+
+.mission h2 {
+    color: orange;
+    font-weight: bold;
+    font-size: 40px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+#aboutbody img{
+    border-radius: 20px;
+    width: 45%;
+    height: auto;
+}
+
+#aboutbody{
+    display: flex;
+    align-items: center;
+}
+
+#aboutbody h2{
+    font-size: 40px;
+    color: orange;
+}
+
+#aboutbody p{
+    color: azure;
+}
+
+#aboutbody div{
+    padding-left: 40px;
+}
+
+#visit-details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#visit-details .details{
+    width: 40%;
+}
+
+#visit-details .details span, #form-details form span{
+    font-size: 52px;
+    color: orange;
+    font-weight: bold;
+}
+
+#visit-details .details h2, #form-details form h2{
+    color: azure;
+    font-size: 34px;
+    padding: 20px 0;
+}
+
+#visit-details .details h3{
+    font-size: 30px;
+    color: azure;
+    padding-bottom: 15px;
+}
+
+#visit-details .details li{
+    list-style: none;
+    display: flex;
+    padding: 10px 0;
+    color: azure;
+    font-style: italic;
+}
+
+#visit-details .details p{
+    margin: 0;
+    font-size: 14px;
+}
+
+#visit-details .details map{
+    width: 55%;
+    height: 400px;
+}
+
+#visit-details .details .map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+#form-details{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px;
+    padding: 80px;
+    border: 1px solid aliceblue;
+}
+
+#form-details form{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#form-details form input, #form-details form textarea{
+    width: 100%;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border: 1px solid white;
+}
+
+#form-details .people div{
+    padding-bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#form-details .people div img{
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    margin-right: 15px;
+    border-radius: 200px;
+}
+
+#form-details .people div p{
+    margin: 0;
+    font-size: 13px;
+    line-height: 25px;
+    color: azure;
+}
+
+#form-details .people div span{
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: orange;
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+footer .brand{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: orange;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.3s color;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 25%;
+    color: azure;
+}
+
+footer h4{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+footer .follow i{
+    color: azure;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid white;
+    padding: 10;
+    border-radius: 6px;
+    width: auto;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
+footer .install h4{
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer .install p{
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+
+footer .install .pay img{
+    width: 250px;
+    height: 50px;
+}

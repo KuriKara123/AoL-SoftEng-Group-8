@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../login-page/style.css">
+</head>
+<body>
+    <div class="center" id="container">
+        <div id="border">
+            <div class="center" id="login">Login</div>
+            <div>
+                <form onsubmit="submitLoginForm(event)">
+                    <div class="relative">
+                        <input type="text" id="loginName" placeholder=" ">
+                        <label for="loginName">Name</label>
+                    </div>
+
+                    <div class="relative">
+                        <input type="password" id="loginPassword" placeholder=" ">
+                        <label for="loginPassword">Password</label>
+                    </div>
+
+                    <div class="center">
+                        <button type="submit">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../login-page/script.js"></script>
+</body>
+</html>

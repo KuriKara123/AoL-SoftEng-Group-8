@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../signup-page/style.css">
+</head>
+<body>
+    
+    <div class="center" id="container">
+        <div id="border">
+            <div class="center" id="createAccount">Create Account</div>
+            <div>
+                <form onsubmit="submitForm(event)">
+                    <div class="relative">
+                        <input type="text" id="name" placeholder=" "/>
+                        <label for="name">Name</label>
+                    </div>
+
+                    <div class="relative">
+                        <input type="password" id="password" placeholder=" "/>
+                        <label for="password">Password</label>
+                    </div>
+    
+                    <div class="relative">
+                        <input type="password" id="confirmPassword" placeholder=" "/>
+                        <label for="confirmPassword">Confirm Password</label>
+                    </div>
+
+                    <div class="center" id="justifySpaceBetween">
+                        <div class="relative">
+                            <select id="month">
+                                <option value="month">Month</option>
+                                <option value="january">January</option>
+                                <option value="february">February</option>
+                                <option value="march">March</option>
+                                <option value="april">April</option>
+                                <option value="may">May</option>
+                                <option value="june">June</option>
+                                <option value="july">July</option>
+                                <option value="august">August</option>
+                                <option value="september">September</option>
+                                <option value="october">October</option>
+                                <option value="november">November</option>
+                                <option value="december">December</option>
+                            </select>
+                        </div>
+                        
+                        <div class="relative">
+                            <input type="number" id="day" placeholder=" " min="1" max="31"/>
+                            <label for="day">Day</label>
+                        </div>
+    
+                        <div class="relative">
+                            <input type="number" id="year" placeholder=" " min="1" max="2023"/>
+                            <label for="year">Year</label>
+                        </div>
+                    </div>
+
+                    <div>
+                        <select id="gender">
+                            <option value="gender">Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                    </div>
+                    
+
+                    <input type="checkbox" id="agree"/>
+                    <label for="agree" id="agree">Agree with terms and condition</label>
+                    <br/><br/>
+
+                    <div class="center">
+                        <button type="submit">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../signup-page/script.js"></script>
+</body>
+</html>

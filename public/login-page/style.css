@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    margin: 0;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../asset/background-signup.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 100vw;
+    height: 100vh;
+}
+
+#border {
+    border: solid orange;
+    border-radius: 1rem;
+    background-image: url('../asset/border-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 2rem 3rem;
+}
+
+#login {
+    font-size: 2rem;
+    font-weight: bold;
+    color: orange;
+    padding-bottom: 1rem;
+}
+
+.relative {
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+#justify {
+    justify-content: space-between;
+}
+
+select {
+    padding: 0.47rem;
+    font-weight: bold;
+    background: none;
+    color: orange;
+    border: orange solid 2px;
+    outline: none;
+}
+
+select option {
+    background-color: white;
+}
+
+.relative input {
+    outline: none;
+    color: white;
+    border: solid white 1px;
+    padding: 0.5rem;
+    width: calc(100% - 1rem);
+    background-color: orange;
+}
+
+.relative label {
+    background-color: orange;
+    position: absolute;
+    top: 0.3rem;
+    left: 0.5rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.relative input:focus ~ label, .relative input:not(:placeholder-shown) ~ label {
+    top: -0.5rem;
+    font-size: 0.7rem;
+}
+
+#gender {
+    width: 100%;
+}
+
+#agree{
+    color: orange;
+}
+
+#justifySpaceBetween {
+    justify-content: space-between;
+}
+
+button {
+    color: white;
+    background-color: orange;
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}

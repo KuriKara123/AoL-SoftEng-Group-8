@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root {
+    --primary-bg: #171717;
+    --secondary-bg: #262626;
+    --accent-bg: #feac08;
+
+    --primary-color: #fff;
+    --secondary-color: rgba(255,255,255, 70%);
+    --accent-color: #feac08;
+
+    --border-color: rgba(255,255,255, 30%);
+    
+    --username-size: 32px;
+    --title-size: 28px;
+    --subtitle: 24px;
+}
+
+body{
+    background-color: black;
+}
+
+.navbar{
+    background-color: white;
+    height: 80px;
+    border-radius: 20px;
+    margin: 10px;
+    padding: 1rem;
+}
+
+.navbar-brand{
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: orange;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.3s color;
+}
+
+.login-button{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover{
+    background-color: rgb(187, 121, 0);
+}
+
+.signup-button{
+    background-color: orange;
+    color: white;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 6px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+    margin-right: 10px;
+}
+
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 18px;
+    color: aliceblue;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid azure;
+    outline: none;
+    transition: 0.2s;
+}
+
+.signup-button:hover{
+    background-color: rgb(187, 121, 0);
+}
+
+.navbar-toggler{
+    border: none;
+    font-size: 1.25 rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar-toggler:focus, .btn-close:focus{
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link{
+    color: rgb(50, 50, 50);
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+
+.nav-link:hover, .nav-link.active{
+    color: black;
+}
+
+@media (min-width: 991px){
+    .nav-link::before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: orange;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .nav-link:hover::before, .nav-link.active::before{
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+#product1{
+    padding-top: 130px;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#product1 .pro{
+    width: 20%;
+    min-width: 300px;
+
+    padding: 10px 12px;
+    border: 1px solid white;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+
+    #visit-details{
+        flex-direction: column;
+    }
+
+    #sm-banner .banner-box{
+        height: 40vh;
+    }
+
+    #sm-banner .banner-box2{
+        margin-top: 20px;
+    }
+
+    #banner3{
+        padding: 0 20px;
+    }
+
+    #banner3 .banner-box{
+        width: 100%;
+    }
+
+}  
+
+#product1 .pro img{
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+}
+
+#product1 h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+    color: orange;
+}
+
+#product1 h3{
+    text-align: center;
+    font-size: 20px;
+    color: rgb(135, 91, 7);
+    padding-bottom: 25px;
+}
+
+#product1 .pro .desc{
+    text-align: start;
+    pad: 10px 0;
+}
+
+#product1 .desc span{
+    color: white;
+    font-size: 13px;
+    font-style: italic;
+
+}
+
+#product1 .desc h5{
+    padding-top: 4px;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#product1 .desc h4{
+    padding-top: 4px;
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+#product1 .pro .desc .star{
+    font-size: 12px;
+    color: rgb(255, 234, 0);
+}
+
+#product1 .pro .signup-button{
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+.text-container button{
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    padding: 8px 20px;
+    border-radius: 40px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.text-container button:hover{
+    background-color: rgb(187, 121, 0);
+}
+
+
+.section-p1{
+    padding: 40px 100px;
+}
+
+#pagination{
+    text-align: center;
+}
+
+#pagination a{
+    text-decoration: none;
+    background-color: orange;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+}
+
+
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    
+}
+
+footer .brand{
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    color: orange;
+    font-size: 25px;
+    font-weight: bolder;
+    transition: 0.3s color;
+}
+
+footer .col{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    width: 25%;
+    color: azure;
+}
+
+footer h4{
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+    margin-bottom: 10px;
+}
+
+footer .follow i{
+    color: azure;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img{
+    border: 1px solid white;
+    padding: 10;
+    border-radius: 6px;
+    width: auto;
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+}
+
+footer .install h4{
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer .install p{
+    font-size: 13px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+footer .install img{
+    margin: 10px 0 15px 0;
+}
+
+footer .install .pay img{
+    width: 250px;
+    height: 50px;
+}
+
+.containerprofile {
+    padding-top: 220px;
+    padding-bottom: 100px;
+    backdrop-filter: blur(20px);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    width: clamp(428px, 990px, 990px);
+    height: 670px;
+    background-color: var(--primary-bg);
+    border-radius: 40px;
+    border: 2px solid var(--accent-bg);
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: 220px auto;
+    
+}
+.profile-header {
+    background: url('../asset/bannerprof.png') center;
+    background-size: cover;
+    margin: 10px;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+}
+    .main-profile {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        inset: calc(100% - 75px) auto auto 70px;
+    }
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            background: url('../asset/profile.jpg') center;
+            background-size: cover;
+            border-radius: 50%;
+            border: 10px solid var(--primary-bg);
+        }
+        .profile-names {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: var(--primary-color);
+            background-color: var(--primary-bg);
+            padding: 10px 30px;
+            border-radius: 0 50px 50px 0;
+            transform: translateX(-10px);
+        }
+            .page-title {
+                color: var(--secondary-color);
+            }
+
+/* ------- profile body header */
+.profile-body {
+    display: grid;
+    grid-template-columns: 150px auto;
+    gap: 70px;
+    padding: 70px;
+}
+    .profile-actions {
+        display: grid;
+        grid-template-rows: repeat(2, max-content) auto;
+        gap: 10px;
+        margin-top: 30px;
+    }
+    .profile-actions button {
+        all: unset;
+        padding: 10px;
+        color: var(--primary-color);
+        border: 2px solid var(--accent-bg);
+        text-align: center;
+        border-radius: 10px;
+    }
+        .profile-actions .follow {background-color: var(--accent-bg)}
+    .bio {
+        color: var(--primary-color);
+        background-color: var(--secondary-bg);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+        .bio-header {
+            display: flex;
+            gap: 10px;
+            border-bottom: 1px solid var(--border-color);
+            color: var(--secondary-color);
+        }
+    .account-info {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 2fr 1fr;
+        gap: 20px;
+    }
+        .data {
+            grid-area: 1/1/2/3;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            color: var(--secondary-color);
+            padding: 30px;
+            text-align: center;
+            border: 1px solid var(--border-color);
+            border-radius: 15px;
+        }
+            .important-data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .other-data {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                background-color: var(--secondary-bg);
+                padding: 15px;
+                border-radius: 10px;
+            }
+            .data-item .value {
+                color: var(--accent-color);
+            }
+                .important-data .value {
+                    font-size: var(--title-size);
+                }
+                .other-data .value {
+                    font-size: var(--subtitle);
+                }
+        .social-media {
+            grid-area: 2/1/3/3;
+            background-color: var(--secondary-bg);
+            color: var(--secondary-color);
+            padding: 15px;
+            border-radius: 10px;
+
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+            .media-link {
+                text-decoration: none;
+                color: var(--accent-color);
+                font-size: var(--subtitle);
+            }
+        .last-post {
+            grid-area: 1/3/3/4;
+            border: 1px solid var(--border-color);
+            background-color: var(--secondary-bg);
+            border-radius: 10px;
+            padding: 10px;
+
+            display: grid;
+            grid-template-rows: 70% auto max-content;
+            gap: 10px;
+        }
+            .post-cover {
+                position: relative;
+                background: url('../asset/chatimelogo.jpg') center;
+                background-size: cover;
+                border-radius: 5px;
+            }
+                .last-badge {
+                    position: absolute;
+                    inset: 3px 3px auto auto;
+                    background-color: rgba(0,0,0, 70%);
+                    color: var(--primary-color);
+                    padding: 5px;
+                    border-radius: 3px;
+                }
+            .post-title {
+                color: var(--primary-color);
+                font-size: 18px;
+            }
+            .post-CTA {
+                all: unset;
+                text-align: center;
+                border: 1px solid var(--accent-color);
+                color: var(--accent-color);
+                border-radius: 5px;
+                padding: 5px;
+            }
+
+@media screen and (max-width: 950px) {
+    .last-post {
+        display: none;
+    }
+    .data, .social-media {
+        grid-column: 1/4;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .profile-card {
+        height: 100%;
+        border-radius: 0;
+    }
+        .profile-header {
+            border-radius: 0;
+        }
+            .main-profile {
+                inset: calc(100% - 75px) auto auto 50%;
+                transform: translateX(-50%);
+
+                flex-direction: column;
+                text-align: center;
+            }
+                .profile-names {transform: translateX(0)}
+        .profile-body {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+            .profile-actions {
+                grid-template-columns: repeat(2, 1fr);
+                margin-top: 90px;
+            }
+                .bio {grid-column: 1/3;}
+
+            .data {gap: 20px;}
+}
